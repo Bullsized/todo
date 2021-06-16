@@ -3,11 +3,11 @@
 
  
 
-Using the API deployed at https://auto.loanvantage360.com/fps/todo/ develop an Angular SPA for a ToDo application. The terms “Task” and “ToDo” are used interchangeably. An important part of the API is the tokens which it requires. Tokens are given when the task is given and should be unique and kept secret. If you have some issues with your token contact your recruiter. Included in the end of the document is an example get query which you can run from postman with your token to create your first ToDo. 
+Using the API deployed at https://auto.loanvantage360.com/fps/api/ develop a SPA for a ToDo application. The terms “Task” and “ToDo” are used interchangeably. An important part of the API is the tokens which it requires. Tokens are given when the task is given and should be unique and kept secret. If you have some issues with your token contact your recruiter. Included in the end of the document is an example get query which you can run from postman with your token to create your first ToDo. 
 
  
 
-Required functionalities are: 
+## Required functionalities are: 
 
  
 
@@ -24,12 +24,10 @@ Required functionalities are:
 
  
 ### 2. List all tasks 
-
+When listing all tasks, we want a visible indication on the status of the task. The possible statuses are not strictly defined, but rather have properties. The definition of     the statuses and the visible indication is left in the hands of the author. The properties are as follows: 
  
 
 ```
-  - When listing all tasks, we want a visible indication on the status of the task. The possible statuses are not strictly defined, but rather have properties. The definition of     the statuses and the visible indication is left in the hands of the author. The properties are as follows: 
-
   - A task that has more than 12h remaining and is not completed 
 
   - A task that is not completed and has less than 12h to be completed 
@@ -44,13 +42,15 @@ Required functionalities are:
 ### 3. Complete task 
 
 ```
-  - A task that is not overdue should have the ability to be completed. Since the server allows for tasks to always be completed, we need front end validation to plug this hole.     If you are having trouble finding the right endpoint, keep in mind that completing a task is an update request. 
+   A task that is not overdue should have the ability to be completed. Since the server allows for tasks to always be completed, we need front end validation to plug this hole. 
+   If you are having trouble finding the right endpoint, keep in mind that completing a task is an update request. 
 ```
 
  
 
 ### 4. Delete task 
 
- 
-``` A task that is not yet completed and not past the due date should be able to be deleted.  ```
+ ``` 
+  A task that is not yet completed and not past the due date should be able to be deleted.
+ ```
 
