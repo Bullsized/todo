@@ -3,7 +3,7 @@
 
  
 
-Using the API deployed at https://auto.loanvantage360.com/fps/todo/index.html develop an Angular SPA for a ToDo application. The terms “Task” and “ToDo” are used interchangeably. An important part of the API is the tokens which it requires. Tokens are given when the task is given and should be unique and kept secret. If you have some issues with your token contact your recruiter. Included in the end of the document is an example get query which you can run from postman with your token to create your first ToDo. 
+Using the API deployed at https://auto.loanvantage360.com/fps/todo/ develop an Angular SPA for a ToDo application. The terms “Task” and “ToDo” are used interchangeably. An important part of the API is the tokens which it requires. Tokens are given when the task is given and should be unique and kept secret. If you have some issues with your token contact your recruiter. Included in the end of the document is an example get query which you can run from postman with your token to create your first ToDo. 
 
  
 
@@ -54,24 +54,3 @@ Required functionalities are:
  
 ``` A task that is not yet completed and not past the due date should be able to be deleted.  ```
 
- 
-
-```
-  Example request 
-
-
-
-  post https://auto.loanvantage360.com/fps/todo/api/ToDos?token={{token}} 
-
-  body: 
-
-  { 
-
-      "Name":"Example todo", 
-
-      "Description": "Created by calling the API", 
-
-      "DueIn":12 
-
-  }
-``` 
