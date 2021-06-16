@@ -54,3 +54,8 @@ When listing all tasks, we want a visible indication on the status of the task. 
   A task that is not yet completed and not past the due date should be able to be deleted.
  ```
 
+## Bonuses
+Although it's a small application we would like to see clearly expressed layers in the app. For example http layer, error handling and etc.
+This highly impacts to projects in long term and if it's done correctly will ensure easier maintenance for the future.
+
+Having good structure in the project will be threated with priority for the task.
